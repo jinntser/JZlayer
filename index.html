@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>播放器整合版</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script src="http://imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2_jq.js" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/493f5cbe4e.js"></script>
+    <script src="js/player.min.js"></script>
+    <link href="css/player.css" rel="stylesheet">
+</head>
+<body>
+<div id="box">
+</div>
+</body>
+
+<script>
+    var _list = [
+        {
+            title: 'Nickelback - How You Remind Me',
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: '1cQh1ccqu8M'
+        },
+        {
+            title: 'Nickelback - Too Bad',
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: '3E7_8FWqY9o'
+        },
+        {
+            title: 'Burn It Down (Official Video) - Linkin Park',
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: 'dxytyRy-O1k'
+        },
+        {
+            title: 'Lady Gaga《Perfect Illusion》',
+            artist: '作者(好像用不到)',
+            type: 'tvp',
+            id: 'k0021ro9j91'
+        },
+        {
+            title: '新歌声六强之路 超多花絮大放送',
+            artist: '作者(好像用不到)',
+            type: 'tvp',
+            id: 'u00210odcww'
+        },
+        {
+            title: 'Moves Like Jagger - Maroon5',
+            artist: '作者(好像用不到)',
+            type: 'tvp',
+            id: 'o0324uj7p0l'
+        },
+        {
+            title: 'Lost In The Echo (Official Video) - Linkin Park',
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: 'co4YpHTqmfQ'
+        },
+        {
+            title: 'Waiting For The End (Official Video) - Linkin Park',
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: '5qF_qbaWt3Q'
+        },
+        {
+            title: 'The Script - Superheroes',
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: 'WIm1GgfRz6M'
+        },
+        {
+            title: 'Imagine Dragons - Demons (Official)',
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: 'mWRsgZuwf_8'
+        },
+        {
+            title: '偷偷塞一個直播頻道',
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: 'psBnG0ZvGmU'
+        },
+        {
+            title: 'OneRepublic - Counting Stars',
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: 'hT_nvWreIhg'
+        },
+        {
+            title: "CAN'T STOP THE FEELING! First Listen (Featuring the cast of DreamWorks Animation's Trolls)",
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: 'p5RobDomh5U'
+        },
+        {
+            title: 'Michael Jackson, Justin Timberlake - Love Never Felt So Good',
+            artist: '作者(好像用不到)',
+            type: 'youtube',
+            id: 'oG08ukJPtR8'
+        }
+    ];
+
+    $(window).load(function(){
+        newPlayer('#box',_list);
+    });
+</script>
+</html>
